@@ -83,7 +83,7 @@ const Header = () => {
           {/* ======== nav right icons ========= */}
           <div className="nav__right d-flex align-items-center gap-4">
             <span className="cart__icon" onClick={toggleCart}>
-              <i class="ri-shopping-basket-line"></i>
+            <i class="ri-shopping-bag-line"></i>
               <span className="cart__badge">{totalQuantity}</span>
             </span>
 

@@ -5,7 +5,25 @@ import logo from "../../assets/images/res-logo.png";
 import "../../styles/footer.css";
 
 import { Link } from "react-router-dom";
-
+const FooterLinks = [
+  {
+    title: "home",
+    link: "/",
+  },
+  {
+    title: "Menu",
+    link: "/Menu",
+  },
+  {
+    title: "cart",
+    link: "/cart",
+  },
+  {   
+    title: "contact",
+    link: "/contact",
+   
+  },
+];
 const Footer = () => {
   return (
     <footer className="footer">
@@ -41,28 +59,36 @@ const Footer = () => {
             <h5 className="footer__title">Contact</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <p>Location: ZindaBazar, Sylhet-3100, Bangladesh</p>
+                <p>Chemin Ahmed Ouaked Dely Ibrahim, Algeria</p>
               </ListGroupItem>
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Phone: 01712345678</span>
+                <span>Phone: 0549 65 11 72</span>
               </ListGroupItem>
 
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Email: example@gmail.com</span>
+              <span>
+                  Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=DmwnWrRlRQmCcKLGzPCRChWMSzFPbpzsbVghzwzRPxPZmwCsXcxfqmZWRSDgDDpckjFnJjpCBMmb">lucascastello69500@gmail.com</a>
+                </span>
               </ListGroupItem>
             </ListGroup>
           </Col>
 
           <Col lg="3" md="4" sm="6">
-            <h5 className="footer__title">Newsletter</h5>
-            <p>Subscribe our newsletter</p>
-            <div className="newsletter">
-              <input type="email" placeholder="Enter your email" />
-              <span>
-                <i class="ri-send-plane-line"></i>
-              </span>
-            </div>
-          </Col>
+            <h5 className="footer_pages">Pages</h5>
+            <ul className="pages">
+                {FooterLinks.map((data, index) => (
+                  <p key={index}>
+                    <a
+                      href={data.link}
+                      className="inline-block hover:scale-105 duration-200"
+                    >
+                      {data.title}
+                    </a>
+                  </p>
+                 
+                ))}
+           </ul>
+           </Col>
         </Row>
 
         <Row className="mt-5">
@@ -73,32 +99,18 @@ const Footer = () => {
             </p>
           </Col>
           <Col lg="6" md="6">
-            <div className="social__links d-flex align-items-center gap-4 justify-content-end">
-              <p className="m-0">Follow: </p>
+            <div className="social__links d-flex align-items-center gap-4 justify-content-right">
               <span>
                 {" "}
-                <Link to="https://www.facebook.com/muhib160">
+                <Link to="//www.facebook.com/lartisanpatissier.lucascastello">
                   <i class="ri-facebook-line"></i>
                 </Link>{" "}
               </span>
 
               <span>
-                <Link to="https://github.com/muhib160">
-                  <i class="ri-github-line"></i>
-                </Link>
-              </span>
-
-              <span>
-                {" "}
-                <Link to=" https://www.youtube.com/c/MuhibsTechDiary">
-                  <i class="ri-youtube-line"></i>
-                </Link>{" "}
-              </span>
-
-              <span>
-                {" "}
-                <Link to=" https://www.linkedin.com/in/muhib160/">
-                  <i class="ri-linkedin-line"></i>
+              {" "}
+                <Link to="//www.instagram.com/lapatisserieparlucascastello/?hl=fr">
+                <i class="ri-instagram-line"></i>
                 </Link>{" "}
               </span>
             </div>

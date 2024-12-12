@@ -81,7 +81,8 @@
 
 @media only screen and (max-width: 992px) {
   .logo img {
-    width: calc(100% - 70%);
+    width: calc(100% - 84%);
+    margin-bottom: -57px;
   }
   .logo h5 {
     font-size: 0.8rem;
@@ -98,7 +99,7 @@
     z-index: 99;
     display: none;
   }
-
+   /* side menu mobile verion*/
   .menu {
     position: absolute;
     top: 0;
