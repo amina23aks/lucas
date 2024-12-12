@@ -115,7 +115,7 @@ const Home = () => {
                   </button>
 
                   <button className="all__foods-btn">
-                    <Link to="/foods">See all foods</Link>
+                    <Link to="/Menu">See all foods</Link>
                   </button>
                 </div>
 
