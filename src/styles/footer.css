@@ -1,7 +1,7 @@
 .footer {
   padding-top: 50px;
   padding-bottom: 30px;
-  background: #fde4e4;
+  background:  #f0ddbe;
 }
 
 .footer__logo img {
@@ -23,6 +23,7 @@
 
 .delivery__time-item {
   background: transparent !important;
+  transition: 0.3s;
 }
 
 .delivery__time-item span {
@@ -33,6 +34,10 @@
 
 .delivery__time-item p {
   color: #212245;
+}
+
+.delivery__time-item a:hover{
+color: #C99B10;
 }
 .footer__title {
   font-size: 1.1rem;
@@ -48,18 +53,29 @@
 }
 .pages{
   margin-left: -17px;
+  transition: 0.3s;
+}
+.pages a:hover {
+  color: #C99B10;
 }
 
 .social__links span i {
   padding: 5px;
-  background: #df2020;
+  background: #744830;
   color: #fff;
   border-radius: 50%;
+  transition: 0.3s;
 }
+
+.social__links span i:hover {
+  background: #C99B10;
+  
+}
+
 
 .copyright__text {
   font-size: 0.8rem;
-  color: #df2020;
+  color: #744830;
 }
 
 

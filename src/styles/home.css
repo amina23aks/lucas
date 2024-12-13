@@ -1,9 +1,9 @@
 .feature__subtitle {
-  color: #df2020;
+  color: #c3ad79;
 }
 
 .feature__title span {
-  color: #df2020;
+  color: #d4ab39;
 }
 
 .feature__text {
@@ -15,7 +15,7 @@
 }
 
 .food__category {
-  background: #df2020;
+  background: #c1b080;
   text-align: center;
   margin-top: 30px;
   padding: 20px 0px;
@@ -38,11 +38,11 @@
 .foodBtnActive {
   background: #fff !important;
   border-radius: 5px;
-  color: #df2020 !important;
+  color: #c1b080 !important;
 }
 
 .tasty__treat-title span {
-  color: #df2020;
+  color: #c1b080;
 }
 
 .tasty__treat-desc {
@@ -57,7 +57,7 @@
 
 .choose__us-title i {
   font-weight: 500 !important;
-  color: #df2020;
+  color: #c1b080;
 }
 
 .choose__us-desc {
@@ -65,11 +65,11 @@
 }
 
 .testimonial__subtitle {
-  color: #df2020;
+  color: #744830;
 }
 
 .testimonial__title span {
-  color: #df2020;
+  color: #c3ad79;
 }
 
 .testimonial__desc {

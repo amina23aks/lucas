@@ -52,7 +52,7 @@
 .form {
   width: 60%;
   margin: auto;
-  background: #fde4e4;
+  background: #f0ddbe;
   padding: 20px;
   border-radius: 5px;
 }
@@ -81,6 +81,14 @@
 
 .user__email {
   font-size: 0.8rem;
+}
+
+.an-account  {
+  color: #5d6061b6;
+  transition: 0.3s;
+  }
+.an-account:hover {
+color: #744830 ;
 }
 
 .feedback__text {

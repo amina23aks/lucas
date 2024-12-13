@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Helmet from "../components/Helmet/Helmet.js";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 
-import heroImg from "../assets/images/hero.png";
+import heroImg from "../assets/images/cake-hero.png";
 import "../styles/hero-section.css";
 
 import { Link } from "react-router-dom";
@@ -98,15 +98,16 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content  ">
-                <h5 className="mb-3">Easy way to make an order</h5>
+                <h5 className="mb-3">Experience Sweet Perfection</h5>
                 <h1 className="mb-4 hero__title">
-                  <span>HUNGRY?</span> Just wait <br /> food at
-                  <span> your door</span>
+                  Indulge in <span>artisanal cakes</span> and treats <br /> crafted with
+                  love, delivered <span>fresh and on time</span>
                 </h1>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                  magni delectus tenetur autem, sint veritatis!
+                  From birthday cakes to bespoke desserts, Luca Castello brings
+                  your sweetest moments to life. Order now and let us make your
+                  celebrations unforgettable!
                 </p>
 
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
@@ -115,7 +116,7 @@ const Home = () => {
                   </button>
 
                   <button className="all__foods-btn">
-                    <Link to="/Menu">See all foods</Link>
+                    <Link to="/Menu">Explore Our Menu</Link>
                   </button>
                 </div>
 
@@ -124,7 +125,7 @@ const Home = () => {
                     <span className="shipping__icon">
                       <i class="ri-car-line"></i>
                     </span>{" "}
-                    No shipping charge
+                    Free delivery for orders over $50
                   </p>
 
                   <p className=" d-flex align-items-center gap-2 ">
