@@ -18,9 +18,9 @@ import featureImg03 from "../assets/images/service-03.png";
 
 import products from "../assets/fake-data/products.js";
 
-import foodCategoryImg01 from "../assets/images/hamburger.png";
-import foodCategoryImg02 from "../assets/images/pizza.png";
-import foodCategoryImg03 from "../assets/images/bread.png";
+import foodCategoryImg01 from "../assets/images/cake.jpg";
+import foodCategoryImg02 from "../assets/images/Tarte.jpg";
+import foodCategoryImg03 from "../assets/images/Viennoiserie.jpg";
 
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
@@ -53,12 +53,12 @@ const Home = () => {
   const [category, setCategory] = useState("ALL");
   const [allProducts, setAllProducts] = useState(products);
 
-  const [hotPizza, setHotPizza] = useState([]);
+  const [hotTarte, setHotTarte] = useState([]);
 
   useEffect(() => {
-    const filteredPizza = products.filter((item) => item.category === "Pizza");
-    const slicePizza = filteredPizza.slice(0, 4);
-    setHotPizza(slicePizza);
+    const filteredTarte = products.filter((item) => item.category === "Tarte");
+    const sliceTarte = filteredTarte.slice(0, 4);
+    setHotTarte(sliceTarte);
   }, []);
 
   useEffect(() => {
@@ -66,25 +66,25 @@ const Home = () => {
       setAllProducts(products);
     }
 
-    if (category === "BURGER") {
+    if (category === "CAKE") {
       const filteredProducts = products.filter(
-        (item) => item.category === "Burger"
+        (item) => item.category === "Cake"
       );
 
       setAllProducts(filteredProducts);
     }
 
-    if (category === "PIZZA") {
+    if (category === "TARTE") {
       const filteredProducts = products.filter(
-        (item) => item.category === "Pizza"
+        (item) => item.category === "Tarte"
       );
 
       setAllProducts(filteredProducts);
     }
 
-    if (category === "BREAD") {
+    if (category === "VIENNOISERIE") {
       const filteredProducts = products.filter(
-        (item) => item.category === "Bread"
+        (item) => item.category === "Viennoiserie"
       );
 
       setAllProducts(filteredProducts);
@@ -206,32 +206,32 @@ const Home = () => {
                 </button>
                 <button
                   className={`d-flex align-items-center gap-2 ${
-                    category === "BURGER" ? "foodBtnActive" : ""
+                    category === "CAKE" ? "foodBtnActive" : ""
                   } `}
-                  onClick={() => setCategory("BURGER")}
+                  onClick={() => setCategory("CAKE")}
                 >
                   <img src={foodCategoryImg01} alt="" />
-                  Burger
+                  Cake
                 </button>
 
                 <button
                   className={`d-flex align-items-center gap-2 ${
-                    category === "PIZZA" ? "foodBtnActive" : ""
+                    category === "TARTE" ? "foodBtnActive" : ""
                   } `}
-                  onClick={() => setCategory("PIZZA")}
+                  onClick={() => setCategory("TARTE")}
                 >
                   <img src={foodCategoryImg02} alt="" />
-                  Pizza
+                  Tarte
                 </button>
 
                 <button
                   className={`d-flex align-items-center gap-2 ${
-                    category === "BREAD" ? "foodBtnActive" : ""
+                    category === "VIENNOISERIE" ? "foodBtnActive" : ""
                   } `}
-                  onClick={() => setCategory("BREAD")}
+                  onClick={() => setCategory("VIENNOISERIE")}
                 >
                   <img src={foodCategoryImg03} alt="" />
-                  Bread
+                  Viennoiserie
                 </button>
               </div>
             </Col>
@@ -307,10 +307,10 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center mb-5 ">
-              <h2>Hot Pizza</h2>
+              <h2>Hot Tarte</h2>
             </Col>
 
-            {hotPizza.map((item) => (
+            {hotTarte.map((item) => (
               <Col lg="3" md="4" sm="6" xs="6" key={item.id}>
                 <ProductCard item={item} />
               </Col>
