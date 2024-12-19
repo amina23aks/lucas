@@ -37,7 +37,7 @@ const products = [
 
   {
     id: "01",
-    title: "Chicken Burger",
+    title: "tarte",
     price: 24.0,
     image01: product_01_image_01,
     image02: product_01_image_02,
@@ -298,6 +298,8 @@ const products = [
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
+
+  
 
   
 ];
