@@ -1,51 +1,67 @@
 import React from "react";
-
-import { Container, Row, Col } from "reactstrap";
-
-import categoryImg01 from "../../../assets/images/category-01.png";
-import categoryImg02 from "../../../assets/images/category-02.png";
-import categoryImg03 from "../../../assets/images/category-03.png";
-import categoryImg04 from "../../../assets/images/category-04.png";
-
 import "../../../styles/category.css";
 
 const categoryData = [
   {
+    id: 1,
     display: "Fastfood",
-    imgUrl: categoryImg01,
+    imgUrl: require("../../../assets/images/category-01.png"),
+    description: "Delicious fast food options for quick meals on the go.",
+    aosDelay: "100",
   },
   {
+    id: 2,
     display: "Pizza",
-    imgUrl: categoryImg02,
+    imgUrl: require("../../../assets/images/category-02.png"),
+    description: "Freshly baked pizzas with your favorite toppings.",
+    aosDelay: "300",
   },
-
   {
+    id: 3,
     display: "Asian Food",
-    imgUrl: categoryImg03,
+    imgUrl: require("../../../assets/images/category-03.png"),
+    description: "Authentic Asian dishes with rich flavors.",
+    aosDelay: "500",
   },
-
   {
-    display: "Row Meat",
-    imgUrl: categoryImg04,
+    id: 4,
+    display: "Raw Meat",
+    imgUrl: require("../../../assets/images/category-04.png"),
+    description: "High-quality raw meat for your favorite recipes.",
+    aosDelay: "700",
   },
 ];
 
 const Category = () => {
   return (
-    <Container>
-      <Row>
-        {categoryData.map((item, index) => (
-          <Col lg="3" md="4" sm="6" xs="6" className="mb-4" key={index}>
-            <div className="category__item d-flex align-items-center gap-3">
-              <div className="category__img">
-                <img src={item.imgUrl} alt="category__item" />
+    <div className="category-section">
+      <div className="container">
+        {/* Heading Section */}
+        <div className="heading-section">
+          <h1>Explore Our Categories</h1>
+        </div>
+
+        {/* Category Cards */}
+        <div className="category-grid">
+          {categoryData.map((item) => (
+            <div
+              key={item.id}
+              data-aos="fade-up"
+              data-aos-delay={item.aosDelay}
+              className="category-card"
+            >
+              <div className="card-image">
+                <img src={item.imgUrl} alt={item.display} />
               </div>
-              <h6>{item.display}</h6>
+              <div className="card-content">
+                <h1>{item.display}</h1>
+                <p>{item.description}</p>
+              </div>
             </div>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
