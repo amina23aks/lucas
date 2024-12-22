@@ -29,6 +29,8 @@ import whyImg from "../assets/images/location.png";
 import networkImg from "../assets/images/network.png";
 
 import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
+import { useDispatch } from "react-redux"; // Import useDispatch for favorites
+import { favoritesActions } from "../store/favoritesSlice"; // Import actions for favorites
 
 const featureData = [
   {
@@ -54,6 +56,8 @@ const Home = () => {
   const [allProducts, setAllProducts] = useState(products);
 
   const [hotTarte, setHotTarte] = useState([]);
+
+  const dispatch = useDispatch(); // Initialize dispatch
 
   useEffect(() => {
     const filteredTarte = products.filter((item) => item.category === "Tarte");
@@ -90,6 +94,10 @@ const Home = () => {
       setAllProducts(filteredProducts);
     }
   }, [category]);
+
+  const addToFavorites = (item) => {
+    dispatch(favoritesActions.addFavorite(item)); // Add to favorites handler
+  };
 
   return (
     <Helmet title="Home">
@@ -238,7 +246,10 @@ const Home = () => {
 
             {allProducts.map((item) => (
               <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
-                <ProductCard item={item} />
+                <ProductCard
+                  item={item}
+                  onFavorite={() => addToFavorites(item)} // Add favorite functionality
+                />
               </Col>
             ))}
           </Row>
@@ -312,7 +323,10 @@ const Home = () => {
 
             {hotTarte.map((item) => (
               <Col lg="3" md="4" sm="6" xs="6" key={item.id}>
-                <ProductCard item={item} />
+                <ProductCard
+                  item={item}
+                  onFavorite={() => addToFavorites(item)} // Add favorite functionality
+                />
               </Col>
             ))}
           </Row>

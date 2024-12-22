@@ -15,9 +15,14 @@ const nav__links = [
     path: "/home",
   },
   {
+    display: "About",
+    path: "/About",
+  },
+  {
     display: "Menu",
     path: "/Menu",
   },
+  
   {
     display: "Cart",
     path: "/cart",
@@ -82,6 +87,11 @@ const Header = () => {
 
           {/* ======== nav right icons ========= */}
           <div className="nav__right d-flex align-items-center gap-4">
+          <span className="favorite__icon">
+            <Link to="/Favorite">
+              <i className="ri-heart-line"></i> {/* Favorite Icon */}
+            </Link>
+          </span>
             <span className="cart__icon" onClick={toggleCart}>
             <i class="ri-shopping-bag-line"></i>
               <span className="cart__badge">{totalQuantity}</span>

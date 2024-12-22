@@ -1,0 +1,46 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #744830;
+}
+
+.font-cursive {
+  font-family: "Pacifico", cursive; /* Use a cursive font for titles */
+}
+
+.border-primary {
+  border-color: #744830;
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bg-red-100 {
+  background-color: #fde0e0;
+}
+
+.bg-orange-100 {
+  background-color: #ffe0c1;
+}
+
+.bg-yellow-100 {
+  background-color: #fff4cc;
+}
+
+.spin {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

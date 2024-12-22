@@ -6,10 +6,16 @@ import { Link } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../../store/shopping-cart/cartSlice";
+import { favoritesActions } from "../../../store/favoritesSlice"; // Import favorites actions
+
 
 const ProductCard = (props) => {
   const { id, title, image01, price } = props.item;
   const dispatch = useDispatch();
+
+  const toggleFavorite = () => {
+    dispatch(favoritesActions.addFavorite(props.item)); // Correctly pass `props.item`
+  };
 
   const addToCart = () => {
     dispatch(
@@ -34,8 +40,11 @@ const ProductCard = (props) => {
         </h5>
         <div className=" d-flex align-items-center justify-content-between ">
           <span className="product__price">${price}</span>
+          <button className="favorite-btn" onClick={toggleFavorite}>
+          <i class="ri-heart-add-line"></i> {/* Favorite Icon */}
+          </button>
           <button className="addTOCart__btn" onClick={addToCart}>
-            Add to Cart
+            <i className="ri-shopping-cart-line"></i> {/* Cart Icon */}
           </button>
         </div>
       </div>

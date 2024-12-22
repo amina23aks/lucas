@@ -53,3 +53,5 @@ section {
     font-size: 1.5rem;
   }
 }
+@tailwind components;
+@tailwind utilities;

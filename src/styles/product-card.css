@@ -42,6 +42,7 @@
   background-color: #c1b080;
 }
 
+
 @media only screen and (max-width: 992px) {
   .product__content h5 a {
     font-size: 0.8rem;

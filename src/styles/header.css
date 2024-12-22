@@ -39,7 +39,8 @@
 
 .cart__icon i,
 .user i,
-.mobile__menu i {
+.mobile__menu i
+.favorite__icon {
   font-size: 1.3rem;
   color: #212245;
   cursor: pointer;
@@ -124,7 +125,8 @@
 
   .cart__icon i,
   .user i,
-  .mobile__menu i {
+  .mobile__menu i
+  .favorite__icon {
     font-size: 1rem;
   }
 
@@ -146,4 +148,13 @@
   .logo h5 {
     margin-top: -55px;
   }
+}
+
+.favorite__icon {
+  font-size: 1.5rem;
+  color: #212245;
+  cursor: pointer;
+}
+.favorite__icon:hover a{
+color: red;
 }

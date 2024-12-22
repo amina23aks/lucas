@@ -229,7 +229,7 @@ const products = [
 
   {
     id: "17",
-    title: "Chicken B",
+    title: "Chicken Bvrfve",
     price: 24.0,
     image01: product_05_image_03,
     image02: product_01_image_02,
