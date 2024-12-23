@@ -8,13 +8,22 @@ const Contact = () => {
       <div className="contact-form">
         <h2>Contact Us</h2>
         <p>
-     Hi,you Need help? Use the form below or email us at{" "}
-          <a href="mailto:hello@luca_castello.com">lucascastello69500@gmail.com</a>
+          Hi, need help? Use the form below or email us at{" "}
+          <a href="mailto:lucascastello69500@gmail.com">lucascastello69500@gmail.com</a>
         </p>
         <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message" rows="4"></textarea>
+          <div className="input-container">
+            <input type="text" id="name" required />
+            <label htmlFor="name">Name</label>
+          </div>
+          <div className="input-container">
+            <input type="email" id="email" required />
+            <label htmlFor="email">Email</label>
+          </div>
+          <div className="input-container">
+            <textarea id="message" rows="4" required></textarea>
+            <label htmlFor="message">Message</label>
+          </div>
           <button type="submit">Send Message</button>
         </form>
       </div>

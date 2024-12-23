@@ -9,34 +9,31 @@ body {
 .contact-container {
   display: flex;
   flex-direction: row-reverse;
-  height: 100vh;
   padding: 2rem;
   gap: 2rem;
+  height: 100vh;
 }
 
 /* Contact Form */
 .contact-form {
   flex: 1;
   background-color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #744830;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact-form p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #555;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-form a {
@@ -48,39 +45,75 @@ body {
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.input-container {
+  position: relative;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px;
   background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+  border-color: #744830;
+  outline: none;
+  background-color: #fff;
+}
+
+.input-container label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1rem;
+  color: #aaa;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container textarea:focus + label,
+.input-container textarea:not(:placeholder-shown) + label {
+  top: -0.6rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  color: #744830;
+  background-color: #fff;
+  padding: 0 0.2rem;
 }
 
 .contact-form button {
-  padding: 1rem;
+  padding: 0.8rem;
   font-size: 1rem;
   background-color: #744830;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .contact-form button:hover {
   background-color: #c1b080;
+  transform: scale(1.05);
 }
 
 /* Contact Map */
 .contact-map {
   flex: 1;
   position: relative;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
 }
 
@@ -96,7 +129,7 @@ body {
   left: 1rem;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 0.9rem;
   font-weight: bold;
   color: #333;
