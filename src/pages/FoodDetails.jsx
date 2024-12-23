@@ -107,10 +107,10 @@ const FoodDetails = () => {
                   Category: <span>{category}</span>
                 </p>
                 <div className="d-flex align-items-center gap-3">
-                  <button className="favorite-btn" onClick={toggleFavorite}>
+                  <button className="favorite-btnD" onClick={toggleFavorite}>
                     <i className="ri-heart-add-line"></i> Add to Favorites
                   </button>
-                  <button className="addTOCart__btn" onClick={addToCart}>
+                  <button className="addTOCart__btnD" onClick={addToCart}>
                     <i className="ri-shopping-cart-line"></i> Add to Cart
                   </button>
                 </div>
@@ -164,7 +164,7 @@ const FoodDetails = () => {
                         required
                       />
                     </div>
-                    <button type="submit" className="addTOCart__btn">
+                    <button type="submit" className="submit">
                       Submit
                     </button>
                   </form>

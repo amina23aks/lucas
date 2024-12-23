@@ -42,18 +42,7 @@
 .remove-btn:hover {
   background-color: #c1b080;
 }
-.favorite-btn{
-  border: none;
-  padding: 7px 25px;
-  background: #744830;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  transition: 0.3s;
-}
-.favorite-btn:hover{
-  background-color: #c1b080;
-}
+
 
 
 @media only screen and (max-width: 992px) {
