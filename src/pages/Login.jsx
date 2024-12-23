@@ -1,53 +1,51 @@
 import React, { useRef } from "react";
-import Helmet from "../components/Helmet/Helmet";
-import CommonSection from "../components/UI/common-section/CommonSection";
-import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import "../styles/Login.css";
 
 const Login = () => {
   const loginNameRef = useRef();
   const loginPasswordRef = useRef();
+  const navigate = useNavigate();
 
   const submitHandler = (e) => {
     e.preventDefault();
+    navigate("/"); // Navigate to the homepage
   };
 
   return (
-    <Helmet title="Login">
-      <CommonSection title="Login" />
-      <section>
-        <Container>
-          <Row>
-            <Col lg="6" md="6" sm="12" className="m-auto text-center">
-              <form className="form mb-5" onSubmit={submitHandler}>
-                <div className="form__group">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    required
-                    ref={loginNameRef}
-                  />
-                </div>
-                <div className="form__group">
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    required
-                    ref={loginPasswordRef}
-                  />
-                </div>
-                <button type="submit" className="addTOCart__btn">
-                  Login
-                </button>
-              </form>
-              <Link to="/register" className="an-account">
-                Don't have an account? Create an account
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </Helmet>
+    <div className="login-container">
+      <div className="login-form">
+        <h2>Login</h2>
+        <p>Welcome back! Please login to your account.</p>
+        <form onSubmit={submitHandler}>
+          <div className="input-container">
+            <input
+              type="email"
+              id="email"
+              required
+              ref={loginNameRef}
+            />
+            <label htmlFor="email">Email</label>
+          </div>
+          <div className="input-container">
+            <input
+              type="password"
+              id="password"
+              required
+              ref={loginPasswordRef}
+            />
+            <label htmlFor="password">Password</label>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p className="register-link">
+          Don’t have an account?{" "}
+          <a href="/register" className="link">
+            Register
+          </a>
+        </p>
+      </div>
+    </div>
   );
 };
 

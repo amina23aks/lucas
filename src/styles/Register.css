@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f4ee;
+}
+
+/* Register Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #f8f4ee;
+}
+
+.register-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.register-form h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #744830;
+  margin-bottom: 1rem;
+}
+
+.register-form p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus {
+  border-color: #744830;
+  outline: none;
+  background-color: #fff;
+}
+
+.input-container label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1rem;
+  color: #aaa;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -0.6rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  color: #744830;
+  background-color: #fff;
+  padding: 0 0.2rem;
+}
+
+.register-form button {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #744830;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.register-form button:hover {
+  background-color: #c1b080;
+  transform: scale(1.05);
+}
+
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-link .link {
+  color: #744830;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link .link:hover {
+  color: #c1b080;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-form {
+    padding: 1.5rem;
+  }
+}
