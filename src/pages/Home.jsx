@@ -18,9 +18,9 @@ import featureImg03 from "../assets/images/service-03.png";
 
 import products from "../assets/fake-data/products.js";
 
-import foodCategoryImg01 from "../assets/images/cake.jpg";
-import foodCategoryImg02 from "../assets/images/Tarte.jpg";
-import foodCategoryImg03 from "../assets/images/Viennoiserie.jpg";
+import foodCategoryImg01 from "../assets/images/cake.png";
+import foodCategoryImg02 from "../assets/images/Tarte.png";
+import foodCategoryImg03 from "../assets/images/Viennoiserie.png";
 
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 

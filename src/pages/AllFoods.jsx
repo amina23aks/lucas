@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Helmet from "../components/Helmet/Helmet";
-import CommonSection from "../components/UI/common-section/CommonSection";
 
 import { Container, Row, Col } from "reactstrap";
 
@@ -8,9 +6,9 @@ import products from "../assets/fake-data/products";
 import ProductCard from "../components/UI/product-card/ProductCard";
 import ReactPaginate from "react-paginate";
 
-import foodCategoryImg01 from "../assets/images/cake.jpg";
-import foodCategoryImg02 from "../assets/images/Tarte.jpg";
-import foodCategoryImg03 from "../assets/images/Viennoiserie.jpg";
+import foodCategoryImg01 from "../assets/images/cake.png";
+import foodCategoryImg02 from "../assets/images/Tarte.png";
+import foodCategoryImg03 from "../assets/images/Viennoiserie.png";
 
 import "../styles/all-foods.css";
 import "../styles/pagination.css";
@@ -45,8 +43,6 @@ const AllFoods = () => {
   };
 
   return (
-    <Helmet title="Menu">
-      <CommonSection title="Menu" />
 
       <section>
         <Container>
@@ -127,7 +123,7 @@ const AllFoods = () => {
           </Row>
         </Container>
       </section>
-    </Helmet>
+   
   );
 };
 

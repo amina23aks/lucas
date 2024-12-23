@@ -32,6 +32,7 @@
   padding: 7px 20px;
   background: transparent;
   color: #fff;
+  border-radius: 18px;
 }
 
 .food__category button img {
