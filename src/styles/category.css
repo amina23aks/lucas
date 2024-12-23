@@ -45,7 +45,8 @@
 }
 
 .card-image img {
-  max-width: 200px;
+  max-width: 64px;
+  border-radius: 30px;
   margin: -3rem auto 0;
   display: block;
   transition: transform 0.3s ease;

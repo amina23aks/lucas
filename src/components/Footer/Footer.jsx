@@ -15,6 +15,10 @@ const FooterLinks = [
     link: "/Menu",
   },
   {
+    title: "About",
+    link: "/About",
+  },
+  {
     title: "cart",
     link: "/cart",
   },

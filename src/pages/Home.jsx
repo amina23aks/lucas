@@ -213,7 +213,7 @@ const Home = () => {
                   All
                 </button>
                 <button
-                  className={`d-flex align-items-center gap-2 ${
+                  className={`d-flex align-items-center gap-2  ${
                     category === "CAKE" ? "foodBtnActive" : ""
                   } `}
                   onClick={() => setCategory("CAKE")}
@@ -223,7 +223,7 @@ const Home = () => {
                 </button>
 
                 <button
-                  className={`d-flex align-items-center gap-2 ${
+                  className={`d-flex align-items-center gap-2  ${
                     category === "TARTE" ? "foodBtnActive" : ""
                   } `}
                   onClick={() => setCategory("TARTE")}

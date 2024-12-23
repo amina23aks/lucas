@@ -37,7 +37,7 @@ const products = [
 
   {
     id: "01",
-    title: "tarte",
+    title: "Magnum white",
     price: 24.0,
     image01: product_01_image_01,
     image02: product_01_image_02,
@@ -49,7 +49,7 @@ const products = [
 
   {
     id: "02",
-    title: "Vegetarian Pizza",
+    title: "Tarte mystère  noisette",
     price: 115.0,
     image01: product_02_image_01,
     image02: product_02_image_02,
@@ -61,7 +61,7 @@ const products = [
 
   {
     id: "03",
-    title: "Double Cheese Margherita",
+    title: "Tarte citron meringuée",
     price: 110.0,
     image01: product_03_image_01,
     image02: product_03_image_02,
@@ -73,7 +73,7 @@ const products = [
 
   {
     id: "04",
-    title: "Maxican Green Wave",
+    title: "Tarte framboise passion",
     price: 110.0,
     image01: product_04_image_01,
     image02: product_04_image_02,
@@ -85,7 +85,7 @@ const products = [
 
   {
     id: "05",
-    title: "Cheese Burger",
+    title: "orange",
     price: 24.0,
     image01: product_05_image_01,
     image02: product_05_image_02,
@@ -96,7 +96,7 @@ const products = [
   },
   {
     id: "06",
-    title: "Royal Cheese Burger",
+    title: "Trianon",
     price: 24.0,
     image01: product_01_image_02,
     image02: product_01_image_01,
@@ -108,7 +108,7 @@ const products = [
 
   {
     id: "07",
-    title: "Seafood Pizza",
+    title: "Tarte mystère chocolat noisette",
     price: 115.0,
     image01: product_02_image_02,
     image02: product_02_image_01,
@@ -120,7 +120,7 @@ const products = [
 
   {
     id: "08",
-    title: "Thin Cheese Pizza",
+    title: "Tarte pistache citron (pistachio)",
     price: 110.0,
     image01: product_03_image_02,
     image02: product_03_image_01,
@@ -132,7 +132,7 @@ const products = [
 
   {
     id: "09",
-    title: "Pizza With Mushroom",
+    title: "Tarte framboise chocolat",
     price: 110.0,
     image01: product_04_image_02,
     image02: product_04_image_01,
@@ -144,7 +144,7 @@ const products = [
 
   {
     id: "10",
-    title: "Classic Hamburger",
+    title: "fraise",
     price: 24.0,
     image01: product_05_image_02,
     image02: product_05_image_01,
@@ -156,7 +156,7 @@ const products = [
 
   {
     id: "11",
-    title: "Crunchy Bread ",
+    title: "Pain au raisin",
     price: 35.0,
     image01: product_06_image_01,
     image02: product_06_image_02,
@@ -168,7 +168,7 @@ const products = [
 
   {
     id: "12",
-    title: "Delicious Bread ",
+    title: "Mini torsade",
     price: 35.0,
     image01: product_06_image_02,
     image02: product_06_image_01,
@@ -180,7 +180,7 @@ const products = [
 
   {
     id: "13",
-    title: "Loaf Bread ",
+    title: "Oranais",
     price: 35.0,
     image01: product_06_image_03,
     image02: product_06_image_02,
@@ -191,7 +191,7 @@ const products = [
   },
   {
     id: "14",
-    title: "Chicken Burger",
+    title: "pistache",
     price: 24.0,
     image01: product_05_image_04,
     image02: product_01_image_02,
@@ -205,7 +205,7 @@ const products = [
 
   {
     id: "15",
-    title: "Chicken ",
+    title: "Tarte Miami Sunlight",
     price: 24.0,
     image01: product_01_image_03,
     image02: product_01_image_02,
@@ -217,7 +217,7 @@ const products = [
 
   {
     id: "16",
-    title: "Chicken t ",
+    title: "Cheese cake pistache framboise",
     price: 24.0,
     image01: product_05_image_06,
     image02: product_01_image_02,
@@ -229,7 +229,7 @@ const products = [
 
   {
     id: "17",
-    title: "Chicken Bvrfve",
+    title: "Déclinaison entremet pistache fleur d’oranger",
     price: 24.0,
     image01: product_05_image_03,
     image02: product_01_image_02,
@@ -241,7 +241,7 @@ const products = [
 
   {
     id: "18",
-    title: "Vegetarian Pizza",
+    title: "Tarte pistache fleur d’oranger",
     price: 115.0,
     image01: product_03_image_03,
     image02: product_02_image_01,
@@ -253,7 +253,7 @@ const products = [
 
   {
     id: "19",
-    title: "Vegetarian ",
+    title: "Tarte mystère pistache framboise ",
     price: 115.0,
     image01: product_02_image_03,
     image02: product_02_image_02,
@@ -265,7 +265,7 @@ const products = [
 
   {
     id: "20",
-    title: "Vegetarian Pizza",
+    title: "Meringue cacahouète",
     price: 115.0,
     image01: product_06_image_04,
     image02: product_06_image_05,
@@ -277,7 +277,7 @@ const products = [
 
   {
     id: "21",
-    title: "Vegetarian Pizza",
+    title: "Pain au raisin",
     price: 115.0,
     image01: product_06_image_05,
     image02: product_06_image_04,
@@ -289,7 +289,7 @@ const products = [
 
   {
     id: "22",
-    title: "Vegetarian Pizza",
+    title: "New York roll pistache",
     price: 115.0,
     image01: product_06_image_06,
     image02: product_06_image_05,
