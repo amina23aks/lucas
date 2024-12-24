@@ -70,9 +70,9 @@ const Home = () => {
       setAllProducts(products);
     }
 
-    if (category === "CAKE") {
+    if (category === "Gros-modèles") {
       const filteredProducts = products.filter(
-        (item) => item.category === "Cake"
+        (item) => item.category === "Gros-modèles"
       );
 
       setAllProducts(filteredProducts);
@@ -214,12 +214,12 @@ const Home = () => {
                 </button>
                 <button
                   className={`d-flex align-items-center gap-2  ${
-                    category === "CAKE" ? "foodBtnActive" : ""
+                    category === "Gros-modèles" ? "foodBtnActive" : ""
                   } `}
-                  onClick={() => setCategory("CAKE")}
+                  onClick={() => setCategory("Gros-modèles")}
                 >
                   <img src={foodCategoryImg01} alt="" />
-                  Cake
+                  Gros-modèles
                 </button>
 
                 <button
@@ -318,7 +318,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center mb-5 ">
-              <h2>Hot Tarte</h2>
+              <h2>Tarte</h2>
             </Col>
 
             {hotTarte.map((item) => (

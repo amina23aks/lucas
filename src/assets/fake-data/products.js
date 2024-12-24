@@ -42,7 +42,7 @@ const products = [
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    category: "Cake",
+    category: "Gros-modèles",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
@@ -90,7 +90,7 @@ const products = [
     image01: product_05_image_01,
     image02: product_05_image_02,
     image03: product_05_image_03,
-    category: "Cake",
+    category: "Gros-modèles",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
@@ -101,7 +101,7 @@ const products = [
     image01: product_01_image_02,
     image02: product_01_image_01,
     image03: product_01_image_03,
-    category: "Cake",
+    category: "Gros-modèles",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
@@ -149,7 +149,7 @@ const products = [
     image01: product_05_image_02,
     image02: product_05_image_01,
     image03: product_05_image_03,
-    category: "Cake",
+    category: "Gros-modèles",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
@@ -196,7 +196,7 @@ const products = [
     image01: product_05_image_04,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    category: "Cake",
+    category: "Gros-modèles",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
@@ -210,7 +210,7 @@ const products = [
     image01: product_01_image_03,
     image02: product_01_image_02,
     image03: product_01_image_01,
-    category: "Cake",
+    category: "Gros-modèles",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
@@ -222,7 +222,7 @@ const products = [
     image01: product_05_image_06,
     image02: product_01_image_02,
     image03: product_01_image_01,
-    category: "Cake",
+    category: "Gros-modèles",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
@@ -234,7 +234,7 @@ const products = [
     image01: product_05_image_03,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    category: "Cake",
+    category: "Gros-modèles",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },

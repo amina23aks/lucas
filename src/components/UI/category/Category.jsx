@@ -4,7 +4,7 @@ import "../../../styles/category.css";
 const categoryData = [
   {
     id: 1,
-    display: "Cake",
+    display: "Gros modèles",
     imgUrl: require("../../../assets/images/category-01.jpg"),
     description: "Delicious fast food options for quick meals on the go.",
     aosDelay: "100",
