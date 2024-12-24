@@ -41,8 +41,8 @@
 
 .cart__icon i,
 .user i,
-.mobile__menu i
-.favorite__icon {
+.mobile__menu i,
+.favorite__icon i {
   font-size: 1.3rem;
   color: #212245;
   cursor: pointer;
@@ -127,8 +127,8 @@
 
   .cart__icon i,
   .user i,
-  .mobile__menu i
-  .favorite__icon {
+  .mobile__menu i,
+  .favorite__icon i {
     font-size: 1rem;
   }
 
