@@ -32,9 +32,16 @@
   transition: 0.3s;
 }
 
-.order__btn:hover {
-  background: #c1b080;
+
+.order__btn a {
+  color: white; /* Default color */
+  text-decoration: none; /* Remove underline */
 }
+
+.order__btn a:hover {
+  color: #c1b080; /* Color on hover */
+}
+
 .all__foods-btn {
   background: transparent;
   border: 1px solid #744830 !important;

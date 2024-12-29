@@ -41,6 +41,11 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+.contact-form a:hover {
+  color: #c1b080;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .contact-form form {
   display: flex;

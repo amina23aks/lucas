@@ -20,42 +20,34 @@ const TestimonialSlider = () => {
   };
   return (
     <Slider {...settings}>
-      <div>
+            <div>
         <p className="review__text">
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          atque, quam minus totam maiores laborum! Impedit consectetur illum
-          aliquid odit. Odit dolore ipsum quod debitis nostrum necessitatibus
-          quis dolorem quas!"
+          "Les pâtisseries de Luca Castello sont une véritable découverte. Chaque création est un délice qui fond en bouche. Les saveurs sont raffinées, et chaque bouchée est un pur bonheur!"
         </p>
-        <div className=" slider__content d-flex align-items-center gap-3 ">
-          <img src={ava01} alt="avatar" className=" rounded" />
+        <div className="slider__content d-flex align-items-center gap-3">
+          <img src={ava01} alt="avatar" className="rounded" />
           <h6>Jhon Doe</h6>
         </div>
       </div>
       <div>
         <p className="review__text">
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          atque, quam minus totam maiores laborum! Impedit consectetur illum
-          aliquid odit. Odit dolore ipsum quod debitis nostrum necessitatibus
-          quis dolorem quas!"
+          "Un service impeccable et des pâtisseries exquises. Que ce soit pour un événement spécial ou un simple plaisir, Luca Castello ne déçoit jamais. Une expérience culinaire hors du commun!"
         </p>
-        <div className="slider__content d-flex align-items-center gap-3 ">
-          <img src={ava02} alt="avatar" className=" rounded" />
+        <div className="slider__content d-flex align-items-center gap-3">
+          <img src={ava02} alt="avatar" className="rounded" />
           <h6>Mitchell Marsh</h6>
         </div>
       </div>
       <div>
         <p className="review__text">
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          atque, quam minus totam maiores laborum! Impedit consectetur illum
-          aliquid odit. Odit dolore ipsum quod debitis nostrum necessitatibus
-          quis dolorem quas!"
+          "Des Tartes aux Entremets, chaque produit est un chef-d'œuvre. Je n'ai jamais goûté de pâtisseries aussi fines et savoureuses. Un véritable régal pour les papilles!"
         </p>
-        <div className="slider__content d-flex align-items-center gap-3 ">
-          <img src={ava03} alt="avatar" className=" rounded" />
+        <div className="slider__content d-flex align-items-center gap-3">
+          <img src={ava03} alt="avatar" className="rounded" />
           <h6>Steven Crock</h6>
         </div>
       </div>
+
     </Slider>
   );
 };

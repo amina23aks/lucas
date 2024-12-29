@@ -34,20 +34,21 @@ import { favoritesActions } from "../store/favoritesSlice"; // Import actions fo
 
 const featureData = [
   {
-    title: "Quick Delivery",
+    title: "Livraison Rapide",
     imgUrl: featureImg01,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: "Des pâtisseries fraîches et délicieuses livrées rapidement à votre porte, pour satisfaire vos envies sucrées.",
   },
-
+  
   {
-    title: "Super Dine In",
+    title: "Dégustation sur Place",
     imgUrl: featureImg02,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: "Venez savourer nos créations directement dans notre pâtisserie, où chaque bouchée est un pur moment de plaisir.",
   },
+  
   {
-    title: "Easy Pick Up",
+    title: "Retrait Facile",
     imgUrl: featureImg03,
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, doloremque.",
+    desc: "Commandez en ligne et récupérez vos pâtisseries en toute simplicité, prêtes à être dégustées.",
   },
 ];
 
@@ -106,43 +107,43 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content  ">
-                <h5 className="mb-3">Experience Sweet Perfection</h5>
-                <h1 className="mb-4 hero__title">
-                  Indulge in <span>artisanal cakes</span> and treats <br /> crafted with
-                  love, delivered <span>fresh and on time</span>
-                </h1>
+              <h5 className="mb-3">Bienvenue chez Luca Castello</h5>
+              <h1 className="mb-4 hero__title">
+                Découvrez nos <span>délices artisanaux</span> et pâtisseries <br /> 
+                créés avec amour et livrés <span>frais et à temps</span>
+              </h1>
 
-                <p>
-                  From birthday cakes to bespoke desserts, Luca Castello brings
-                  your sweetest moments to life. Order now and let us make your
-                  celebrations unforgettable!
+              <p>
+                Des Gros modèles aux Entremets, Viennoiseries et Tartes, Luca Castello vous offre une expérience pâtissière raffinée et unique. Commandez dès maintenant et laissez-nous ajouter une touche sucrée à vos moments spéciaux !
+              </p>
+
+              <div className="hero__btns d-flex align-items-center gap-5 mt-4">
+              <button className="order__btn d-flex align-items-center justify-content-between">
+  <Link to="/About">En savoir plus sur Luca Castello</Link> <i class="ri-arrow-right-s-line"></i>
+</button>
+
+
+                <button className="all__foods-btn">
+                  <Link to="/Menu">Explorez notre menu</Link>
+                </button>
+              </div>
+
+              <div className="hero__service d-flex align-items-center gap-5 mt-5">
+                <p className="d-flex align-items-center gap-2">
+                  <span className="shipping__icon">
+                    <i class="ri-car-line"></i>
+                  </span> 
+                  Livraison gratuite 
                 </p>
 
-                <div className="hero__btns d-flex align-items-center gap-5 mt-4">
-                  <button className="order__btn d-flex align-items-center justify-content-between">
-                    Order now <i class="ri-arrow-right-s-line"></i>
-                  </button>
+                <p className="d-flex align-items-center gap-2">
+                  <span className="shipping__icon">
+                    <i class="ri-shield-check-line"></i>
+                  </span> 
+                  Paiement 100% sécurisé
+                </p>
+              </div>
 
-                  <button className="all__foods-btn">
-                    <Link to="/Menu">Explore Our Menu</Link>
-                  </button>
-                </div>
-
-                <div className=" hero__service  d-flex align-items-center gap-5 mt-5 ">
-                  <p className=" d-flex align-items-center gap-2 ">
-                    <span className="shipping__icon">
-                      <i class="ri-car-line"></i>
-                    </span>{" "}
-                    Free delivery for orders over $50
-                  </p>
-
-                  <p className=" d-flex align-items-center gap-2 ">
-                    <span className="shipping__icon">
-                      <i class="ri-shield-check-line"></i>
-                    </span>{" "}
-                    100% secure checkout
-                  </p>
-                </div>
               </div>
             </Col>
 
@@ -162,21 +163,20 @@ const Home = () => {
       <section>
         <Container>
           <Row>
-            <Col lg="12" className="text-center">
-              <h5 className="feature__subtitle mb-4">What we serve</h5>
-              <h2 className="feature__title">Just sit back at home</h2>
-              <h2 className="feature__title">
-                we will <span>take care</span>
-              </h2>
-              <p className="mb-1 mt-4 feature__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-                officiis?
-              </p>
-              <p className="feature__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, eius.{" "}
-              </p>
-            </Col>
+       <Col lg="12" className="text-center">
+          <h5 className="feature__subtitle mb-4">Nos créations</h5>
+          <h2 className="feature__title">Détendez-vous chez vous</h2>
+          <h2 className="feature__title">
+            Nous nous <span>occuperons de tout</span>
+          </h2>
+          <p className="mb-1 mt-4 feature__text">
+            Des Gros modèles aux Entremets, Tartes et Viennoiseries, nous créons des pâtisseries délicieuses et raffinées pour chaque occasion.
+          </p>
+          <p className="feature__text">
+            Laissez-nous apporter une touche sucrée à votre journée avec nos produits artisanaux, préparés avec soin et livrés à votre porte.
+          </p>
+       </Col>
+
 
             {featureData.map((item, index) => (
               <Col lg="4" md="6" sm="6" key={index} className="mt-5">
@@ -199,7 +199,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h2>Popular Foods</h2>
+            <h2>Pâtisseries Populaires</h2>
             </Col>
 
             <Col lg="12">
@@ -264,89 +264,80 @@ const Home = () => {
             </Col>
 
             <Col lg="6" md="6">
-              <div className="why__tasty-treat">
-                <h2 className="tasty__treat-title mb-4">
-                  Why <span>Tasty Treat?</span>
-                </h2>
-                <p className="tasty__treat-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum, minus. Tempora reprehenderit a corporis velit,
-                  laboriosam vitae ullam, repellat illo sequi odio esse iste
-                  fugiat dolor, optio incidunt eligendi deleniti!
-                </p>
+  <div className="why__tasty-treat">
+    <h2 className="tasty__treat-title mb-4">
+      Pourquoi choisir <span>nos délices</span> ?
+    </h2>
+    <p className="tasty__treat-desc">
+      Des pâtisseries artisanales, créées avec passion et soin, pour offrir une expérience gourmande inoubliable. Chaque bouchée est un voyage dans l'univers sucré de Luca Castello.
+    </p>
 
-                <ListGroup className="mt-4">
-                  <ListGroupItem className="border-0 ps-0">
-                    <p className=" choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Fresh and tasty
-                      foods
-                    </p>
-                    <p className="choose__us-desc">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Quia, voluptatibus.
-                    </p>
-                  </ListGroupItem>
+    <ListGroup className="mt-4">
+      <ListGroupItem className="border-0 ps-0">
+        <p className="choose__us-title d-flex align-items-center gap-2">
+          <i class="ri-checkbox-circle-line"></i> Des pâtisseries fraîches et savoureuses
+        </p>
+        <p className="choose__us-desc">
+          Préparées avec les meilleurs ingrédients pour garantir une saveur authentique et irrésistible.
+        </p>
+      </ListGroupItem>
 
-                  <ListGroupItem className="border-0 ps-0">
-                    <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i> Quality support
-                    </p>
-                    <p className="choose__us-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Qui, earum.
-                    </p>
-                  </ListGroupItem>
+      <ListGroupItem className="border-0 ps-0">
+        <p className="choose__us-title d-flex align-items-center gap-2">
+          <i class="ri-checkbox-circle-line"></i> Un soutien de qualité
+        </p>
+        <p className="choose__us-desc">
+          Nous sommes à votre écoute, prêts à répondre à vos besoins et à vous conseiller.
+        </p>
+      </ListGroupItem>
 
-                  <ListGroupItem className="border-0 ps-0">
-                    <p className="choose__us-title d-flex align-items-center gap-2 ">
-                      <i class="ri-checkbox-circle-line"></i>Order from any
-                      location{" "}
-                    </p>
-                    <p className="choose__us-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Qui, earum.
-                    </p>
-                  </ListGroupItem>
-                </ListGroup>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <ListGroupItem className="border-0 ps-0">
+        <p className="choose__us-title d-flex align-items-center gap-2">
+          <i class="ri-checkbox-circle-line"></i> Commandez de n'importe où
+        </p>
+        <p className="choose__us-desc">
+          Peu importe où vous êtes, nous vous apportons nos créations directement à votre porte.
+        </p>
+      </ListGroupItem>
+    </ListGroup>
+  </div>
+</Col>
 
-      <section className="pt-0">
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center mb-5 ">
-              <h2>Tarte</h2>
-            </Col>
+</Row>
+</Container>
+</section>
 
-            {hotTarte.map((item) => (
-              <Col lg="3" md="4" sm="6" xs="6" key={item.id}>
-                <ProductCard
-                  item={item}
-                  onFavorite={() => addToFavorites(item)} // Add favorite functionality
-                />
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
+<section className="pt-0">
+  <Container>
+    <Row>
+      <Col lg="12" className="text-center mb-5">
+        <h2>Tartes</h2>
+      </Col>
+
+      {hotTarte.map((item) => (
+        <Col lg="3" md="4" sm="6" xs="6" key={item.id}>
+          <ProductCard
+            item={item}
+            onFavorite={() => addToFavorites(item)} // Add favorite functionality
+          />
+        </Col>
+      ))}
+    </Row>
+  </Container>
+</section>
 
       <section>
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <div className="testimonial ">
-                <h5 className="testimonial__subtitle mb-4">Testimonial</h5>
-                <h2 className="testimonial__title mb-4">
-                  What our <span>customers</span> are saying
-                </h2>
-                <p className="testimonial__desc">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Distinctio quasi qui minus quos sit perspiciatis inventore
-                  quis provident placeat fugiat!
-                </p>
+            <div className="testimonial">
+              <h5 className="testimonial__subtitle mb-4">Témoignages</h5>
+              <h2 className="testimonial__title mb-4">
+                Ce que nos <span>clients</span> en disent
+              </h2>
+              <p className="testimonial__desc">
+                Nos clients apprécient la qualité exceptionnelle et l'authenticité de nos pâtisseries. Chaque création est une véritable œuvre d'art culinaire, préparée avec soin et passion.
+              </p>
 
                 <TestimonialSlider />
               </div>

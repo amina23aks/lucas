@@ -35,54 +35,50 @@ const About = () => {
               data-aos="fade-up"
               className="text-3xl sm:text-4xl font-bold font-cursive"
             >
-              Premium Blend Coffee
+              Bienvenue chez Luca Castello
             </h1>
             <p
               data-aos="fade-up"
               className="text-sm text-gray-500 tracking-wide leading-5"
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Eaque reiciendis inventore iste ratione ex alias quis magni at
-              optio
+              Découvrez l'art de la pâtisserie française à travers nos créations raffinées. Chaque gâteau, tarte, entremet et viennoiserie est conçu avec passion pour offrir une expérience culinaire inoubliable.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="space-y-5">
-                <div data-aos="fade-up" className="flex items-center gap-3">
-                  <GrSecure className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-100 " />
-                  <span>Premium Coffee</span>
-                </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  className="flex items-center gap-3"
-                >
-                  <IoFastFood className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-100 " />
-                  <span>Hot Coffee</span>
-                </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="500"
-                  className="flex items-center gap-3"
-                >
-                  <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
-                  <span>Cold Coffee</span>
-                </div>
-              </div>
-              <div
-                data-aos="slide-left"
-                className="border-l-4 border-primary/50 pl-6 space-y-2"
-              >
-                <h1 className="text-2xl font-semibold font-cursive ">
-                  Tea Lover
-                </h1>
-                <p className="text-sm text-gray-500">
-                  Much like writing code, brewing the perfect cup of tea
-                  requires patience, precision, and a dash of passion to
-                  create a comforting blend of flavors.
-                </p>
-              </div>
+            <div className="space-y-5">
+            <div data-aos="fade-up" className="flex items-center gap-3">
+              <GrSecure className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-100" />
+              <span>Pâtisseries Premium</span>
             </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="flex items-center gap-3"
+            >
+              <IoFastFood className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-100" />
+              <span>Créations Fraîches</span>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              className="flex items-center gap-3"
+            >
+              <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
+              <span>Pâtisseries à emporter</span>
+            </div>
+          </div>
+          <div
+            data-aos="slide-left"
+            className="border-l-4 border-primary/50 pl-6 space-y-2"
+          >
+            <h1 className="text-2xl font-semibold font-cursive">
+              Passion Gourmande
+            </h1>
+            <p className="text-sm text-gray-500">
+              Tout comme l’art de créer une pâtisserie parfaite, chaque création chez Luca Castello est réalisée avec soin, précision et une passion sans égale pour l’excellence culinaire.
+            </p>
+          </div>
+          </div>
           </div>
         </div>
       </div>

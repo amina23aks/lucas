@@ -6,30 +6,31 @@ const categoryData = [
     id: 1,
     display: "Gros modèles",
     imgUrl: require("../../../assets/images/category-01.jpg"),
-    description: "Delicious fast food options for quick meals on the go.",
+    description: "De magnifiques créations de pâtisserie, parfaites pour les grandes occasions, alliant saveur et élégance.",
     aosDelay: "100",
   },
   {
     id: 2,
     display: "Tarte",
     imgUrl: require("../../../assets/images/category-02.jpg"),
-    description: "Freshly baked pizzas with your favorite toppings.",
+    description: "Des tartes fraîches et délicieuses, préparées avec des ingrédients de qualité pour une expérience gourmande.",
     aosDelay: "300",
   },
   {
     id: 3,
     display: "Viennoiserie",
     imgUrl: require("../../../assets/images/category-03.jpg"),
-    description: "Authentic Asian dishes with rich flavors.",
+    description: "Des viennoiseries légères et fondantes, préparées chaque matin pour un goût inégalé.",
     aosDelay: "500",
   },
   {
     id: 4,
     display: "Entremets",
     imgUrl: require("../../../assets/images/category-04.jpg"),
-    description: "High-quality raw meat for your favorite recipes.",
+    description: "Des entremets raffinés, alliant textures et saveurs, pour ravir vos papilles à chaque bouchée.",
     aosDelay: "700",
   },
+  
 ];
 
 const Category = () => {
