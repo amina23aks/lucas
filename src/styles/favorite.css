@@ -28,20 +28,7 @@
   color: #744830;
 }
 
-.remove-btn {
-  border: none;
-  padding: 7px 25px;
-  background: #744830;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  transition: 0.3s;
-  cursor: pointer;
-}
 
-.remove-btn:hover {
-  background-color: #c1b080;
-}
 
 
 
@@ -132,7 +119,7 @@
   padding: 7px 25px;
   background: #744830;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 0.9rem;
   transition: 0.3s;
   cursor: pointer;

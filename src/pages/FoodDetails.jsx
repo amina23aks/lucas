@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import products from "../assets/fake-data/products";
 import { useParams } from "react-router-dom";
-import Helmet from "../components/Helmet/Helmet";
-import CommonSection from "../components/UI/common-section/CommonSection";
+
 import { Container, Row, Col } from "reactstrap";
 
 import { useDispatch } from "react-redux";
@@ -11,7 +10,8 @@ import { favoritesActions } from "../store/favoritesSlice"; // Import favorites 
 
 import "../styles/product-details.css";
 import ProductCard from "../components/UI/product-card/ProductCard";
-
+import CommonSection from "../components/UI/common-section/CommonSection";
+import Halmet from "../components/Helmet/Helmet";
 const FoodDetails = () => {
   const [tab, setTab] = useState("desc");
   const [enteredName, setEnteredName] = useState("");

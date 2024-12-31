@@ -1,25 +1,31 @@
+/* General Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/* Primary text color */
 .text-primary {
   color: #744830;
 }
 
+/* Cursive font for titles */
 .font-cursive {
-  font-family: "Pacifico", cursive; /* Use a cursive font for titles */
+  font-family: "Pacifico", cursive;
 }
 
+/* Border primary color */
 .border-primary {
   border-color: #744830;
 }
 
+/* Small shadow for elements */
 .shadow-sm {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Background colors */
 .bg-red-100 {
   background-color: #fde0e0;
 }
@@ -32,6 +38,7 @@
   background-color: #fff4cc;
 }
 
+/* Animation for spinning */
 .spin {
   animation: spin 10s linear infinite;
 }
@@ -43,4 +50,109 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* New Styles for Welcome Section */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.sm\:grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.text-gray-600 {
+  color: #4a4a4a;
+}
+
+.leading-6 {
+  line-height: 1.8; /* Slightly larger for better readability */
+}
+
+.tracking-wide {
+  letter-spacing: 0.03em; /* Subtle spacing */
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #d69f5e; /* Slightly darker shade for hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Improved image effect */
+.rounded-lg {
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.rounded-lg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section spacing */
+.section-spacing {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem; /* Adjust title size */
+  }
+
+  .leading-6 {
+    line-height: 1.6;
+  }
+
+  button {
+    padding: 0.75rem 1rem; /* Smaller button padding */
+    font-size: 0.875rem; /* Slightly smaller font */
+  }
+}
+
+.plus{
+  border: none;
+  padding: 7px 25px;
+  background: #744830;
+  color: #fff;
+  border-radius: 70px; /* Reduced border radius */
+  font-size: 0.9rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.plus:hover {
+  background-color: #c1b080;
+}
+
+.text-brown-800 {
+  color: #6B4F30; /* Adjust this if you'd like a different shade of brown */
+}
+
+.text-black {
+  color: black;
+}
+
+.leading-7 {
+  line-height: 1.75rem; /* Larger line height for better readability */
 }

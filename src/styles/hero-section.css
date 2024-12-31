@@ -38,7 +38,7 @@
 }
 
 .order__btn a:hover {
-  color: #c1b080; /* Color on hover */
+  color: #0f0f0d; /* Color on hover */
 }
 
 .all__foods-btn {
@@ -52,7 +52,7 @@
   transition: 0.3s;
 }
 .all__foods-btn a:hover {
-  color: #c1b080;
+  color: #ffffff;
 }
 
 .hero__service p {

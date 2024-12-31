@@ -1,90 +1,56 @@
 import React from "react";
-import BannerImg from "../../src/assets/images/cake-brown.png";
-import { GrSecure } from "react-icons/gr";
-import { IoFastFood } from "react-icons/io5";
-import { GiFoodTruck } from "react-icons/gi";
-import BgImg from "../../src/assets/images/coffee-texture.jpg";
+import WelcomeImg from "../../src/assets/images/about.jpg"; // Add your new image
+import AboutSection from "../components/UI/AboutSection/AboutSection";
+import "../styles/about.css"
 
-const bgImage = {
-  backgroundImage: `url(${BgImg})`,
-  backgroundColor: "#270c03",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  height: "100%",
-  width: "100%",
-};
+
 const About = () => {
-  return <>
-  <span id="about"></span>
-  <div style={bgImage}>
-    <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0 ">
-      <div className="container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* Image section */}
-          <div data-aos="zoom-in">
+  return (
+    <>
+      <div>
+      <AboutSection /> {/* Use the AboutSection component here */}
+    </div>
+
+      {/* New Section: Welcome Section */}
+      <div className="container py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12 section-spacing">
+          {/* Image on the left */}
+          <div data-aos="fade-right" className="flex justify-center">
             <img
-              src={BannerImg}
-              alt="biryani img"
-              className="max-w-[430px] w-full mx-auto drop-shadow-[10px_-10px_12px_rgba(0,0,0,1)] spin"
+              src={WelcomeImg}
+              alt="Welcome Lucas Castello"
+              className="rounded-lg shadow-lg w-full max-w-[500px] border-4 border-gray-100"
             />
           </div>
-          {/* text content section */}
-          <div className="flex flex-col justify-center gap-6 sm:pt-0">
-            <h1
-              data-aos="fade-up"
-              className="text-3xl sm:text-4xl font-bold font-cursive"
-            >
-              Bienvenue chez Luca Castello
-            </h1>
-            <p
-              data-aos="fade-up"
-              className="text-sm text-gray-500 tracking-wide leading-5"
-            >
-              Découvrez l'art de la pâtisserie française à travers nos créations raffinées. Chaque gâteau, tarte, entremet et viennoiserie est conçu avec passion pour offrir une expérience culinaire inoubliable.
-            </p>
 
-            <div className="grid grid-cols-2 gap-6">
-            <div className="space-y-5">
-            <div data-aos="fade-up" className="flex items-center gap-3">
-              <GrSecure className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-100" />
-              <span>Pâtisseries Premium</span>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              className="flex items-center gap-3"
-            >
-              <IoFastFood className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-100" />
-              <span>Créations Fraîches</span>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="500"
-              className="flex items-center gap-3"
-            >
-              <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
-              <span>Pâtisseries à emporter</span>
-            </div>
-          </div>
-          <div
-            data-aos="slide-left"
-            className="border-l-4 border-primary/50 pl-6 space-y-2"
-          >
-            <h1 className="text-2xl font-semibold font-cursive">
-              Passion Gourmande
-            </h1>
-            <p className="text-sm text-gray-500">
-              Tout comme l’art de créer une pâtisserie parfaite, chaque création chez Luca Castello est réalisée avec soin, précision et une passion sans égale pour l’excellence culinaire.
-            </p>
-          </div>
-          </div>
-          </div>
+          {/* Text on the right */}
+          <div data-aos="fade-left" className="flex flex-col">
+  <h1 className="text-3xl sm:text-4xl font-bold font-cursive mb-4 text-brown-800"> {/* Changed color to brown */}
+    Notre histoire
+  </h1>
+  <p className="text-black leading-9 tracking-wide mb-6"> {/* Increased font size and changed text color to black */}
+    La pâtisserie française haut de gamme par l'artisan LUCAS CASTELLO,
+    pâtissier d'origine corse et espagnol qui s'est spécialisé dans la
+    pâtisserie fine originaire de Lyon, avant de s'installer à Alger et
+    d'ouvrir sa propre enseigne depuis 2017. Il crée ses propres gâteaux
+    élaborés avec des produits d'importation. Une pâtisserie, qui vous
+    offre des réalisations osées, avec des ingrédients issus des quatre
+    coins du globe (France, Espagne, Belgique, Madagascar, Brésil, etc…).
+    En effet, la pâtisserie par Lucas Castello a mis les petits plats dans
+    les grands en travaillant avec des produits nobles (gousse de vanille
+    de Madagascar, crème de marron d’Ardèche, la fève de Tonka du Brésil,…),
+    mais travaille également avec les meilleurs chocolats comme Valrhona,
+    Barry, ou encore Callebaut. Le chef pâtissier français Lucas, ainsi
+    que son équipe, vous invitent donc à venir nombreux goûter leurs
+    délices, ornés de macarons, de pétales de chocolats, de feuilles d’or
+    et d’argent etc... Que l'aventure commence.
+  </p>
+</div>
+
         </div>
       </div>
-    </div>
-  </div>
-</>
+    </>
+  );
 };
 
 export default About;

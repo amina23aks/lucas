@@ -9,7 +9,7 @@ import "../styles/hero-section.css";
 import { Link } from "react-router-dom";
 
 import Category from "../components/UI/category/Category.jsx";
-
+import AboutSection from "../components/UI/AboutSection/AboutSection.jsx";
 import "../styles/home.css";
 
 import featureImg01 from "../assets/images/delivery.gif";
@@ -159,6 +159,12 @@ const Home = () => {
       <section className="pt-0">
         <Category />
       </section>
+
+      <section className="">
+        <AboutSection isHomePage={true} /> {/* Pass the prop to render the button */}
+      </section>
+    
+     
 
       <section>
         <Container>
