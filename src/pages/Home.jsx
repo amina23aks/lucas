@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Helmet from "../components/Helmet/Helmet.js";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 
-import heroImg from "../assets/images/cake-hero.png";
+import heroImg from "../assets/images/lucas-hero.png";
 import "../styles/hero-section.css";
 
 import { Link } from "react-router-dom";
@@ -12,9 +12,9 @@ import Category from "../components/UI/category/Category.jsx";
 
 import "../styles/home.css";
 
-import featureImg01 from "../assets/images/service-01.png";
-import featureImg02 from "../assets/images/service-02.png";
-import featureImg03 from "../assets/images/service-03.png";
+import featureImg01 from "../assets/images/delivery.gif";
+import featureImg02 from "../assets/images/cake.gif";
+import featureImg03 from "../assets/images/box.gif";
 
 import products from "../assets/fake-data/products.js";
 
@@ -24,9 +24,9 @@ import foodCategoryImg03 from "../assets/images/Viennoiserie.png";
 
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
-import whyImg from "../assets/images/location.png";
+import whyImg from "../assets/images/why.jpg";
 
-import networkImg from "../assets/images/network.png";
+import networkImg from "../assets/images/network.webp";
 
 import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
 import { useDispatch } from "react-redux"; // Import useDispatch for favorites

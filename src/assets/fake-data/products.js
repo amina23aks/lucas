@@ -21,7 +21,7 @@ import product_03_image_03 from "../images/product_3.3.jpg";
 
 import product_04_image_01 from "../images/product_4.1.jpg";
 import product_04_image_02 from "../images/product_4.2.jpg";
-//import product_04_image_03 from "../images/product_4.3.png";
+import product_04_image_03 from "../images/product_4.3.jpg";
 
 
 
@@ -31,6 +31,8 @@ import product_06_image_03 from "../images/product_6.3.jpg";
 import product_06_image_04 from "../images/product_6.4.jpg";
 import product_06_image_05 from "../images/product_6.5.jpg";
 import product_06_image_06 from "../images/product_6.6.jpg";
+import product_06_image_07 from "../images/product_10.jpg";
+
 
 const products = [
  
@@ -108,7 +110,7 @@ const products = [
 
   {
     id: "07",
-    title: "Tarte mystère chocolat noisette",
+    title: "Tarte mystère chocolat",
     price: 115.0,
     image01: product_02_image_02,
     image02: product_02_image_01,
@@ -120,7 +122,7 @@ const products = [
 
   {
     id: "08",
-    title: "Tarte pistache citron (pistachio)",
+    title: "Tarte  noisette",
     price: 110.0,
     image01: product_03_image_02,
     image02: product_03_image_01,
@@ -298,7 +300,29 @@ const products = [
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
+  {
+    id: "23",
+    title: "Tarte pistache",
+    price: 110.0,
+    image01: product_04_image_03,
+    image02: product_03_image_01,
+    image03: product_03_image_03,
+    category: "Tarte",
 
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+
+  {
+    id: "24",
+    title: "frmbois",
+    price: 110.0,
+    image01: product_06_image_07,
+    image02: product_03_image_01,
+    image03: product_03_image_03,
+    category: "Gros-modèles",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
   
 
   
