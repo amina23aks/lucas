@@ -1,6 +1,6 @@
 /* General Container */
 .container {
-  max-width: 1200px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -84,7 +84,7 @@
 
 /* Hover effect for button */
 button:hover {
-  background-color: #d69f5e; /* Slightly darker shade for hover */
+  background-color: #c1b080 ; /* Slightly darker shade for hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px); /* Lift effect */
 }

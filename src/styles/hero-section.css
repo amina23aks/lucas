@@ -30,6 +30,11 @@
   color: #fff;
   transition: 0.3s;
 }
+.order__btn:hover {
+  background: #c1b080 ;
+  color: #fff;
+  transition: 0.3s;
+}
 
 
 .order__btn a {
@@ -38,14 +43,17 @@
 }
 
 .order__btn a:hover {
-  color: #0f0f0d; /* Color on hover */
+  color: #ffffff; /* Color on hover */
 }
 
 .all__foods-btn {
   background: transparent;
   border: 1px solid #744830 !important;
 }
-
+.all__foods-btn:hover{
+  background-color: #c1b080 ;
+  border-color: #c1b080 ;
+}
 
 .all__foods-btn a {
   color: #744830;

@@ -156,11 +156,11 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="pt-0">
+      <section className="pb-0 pr-0">
         <Category />
       </section>
 
-      <section className="">
+      <section className="pt pr">
         <AboutSection isHomePage={true} /> {/* Pass the prop to render the button */}
       </section>
     

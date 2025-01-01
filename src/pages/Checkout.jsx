@@ -93,7 +93,7 @@ const Checkout = () => {
                     onChange={(e) => setPostalCode(e.target.value)}
                   />
                 </div>
-                <button type="submit" className="addTOCart__btn">
+                <button type="submit" className="addTOCart__btnC">
                   Payment
                 </button>
               </form>
