@@ -21,6 +21,8 @@ import products from "../assets/fake-data/products.js";
 import foodCategoryImg01 from "../assets/images/cake.png";
 import foodCategoryImg02 from "../assets/images/Tarte.png";
 import foodCategoryImg03 from "../assets/images/Viennoiserie.png";
+import foodCategoryImg04 from "../assets/images/Entremets.png";
+
 
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
@@ -90,6 +92,14 @@ const Home = () => {
     if (category === "VIENNOISERIE") {
       const filteredProducts = products.filter(
         (item) => item.category === "Viennoiserie"
+      );
+
+      setAllProducts(filteredProducts);
+    }
+
+    if (category === "ENTREMETS") {
+      const filteredProducts = products.filter(
+        (item) => item.category === "Entremets"
       );
 
       setAllProducts(filteredProducts);
@@ -246,6 +256,15 @@ const Home = () => {
                 >
                   <img src={foodCategoryImg03} alt="" />
                   Viennoiserie
+                </button>
+                <button
+                  className={`d-flex align-items-center gap-2 ${
+                    category === "ENTREMETS" ? "foodBtnActive" : ""
+                  } `}
+                  onClick={() => setCategory("ENTREMETS")}
+                >
+                  <img src={foodCategoryImg04} alt="" />
+                  Entremets
                 </button>
               </div>
             </Col>

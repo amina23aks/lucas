@@ -31,6 +31,7 @@ const categoryData = [
     aosDelay: "700",
   },
   
+  
 ];
 
 const Category = () => {

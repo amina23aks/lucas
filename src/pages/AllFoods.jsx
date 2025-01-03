@@ -9,6 +9,8 @@ import ReactPaginate from "react-paginate";
 import foodCategoryImg01 from "../assets/images/cake.png";
 import foodCategoryImg02 from "../assets/images/Tarte.png";
 import foodCategoryImg03 from "../assets/images/Viennoiserie.png";
+import foodCategoryImg04 from "../assets/images/Entremets.png";
+
 
 import "../styles/all-foods.css";
 import "../styles/pagination.css";
@@ -99,6 +101,15 @@ const AllFoods = () => {
                 <img src={foodCategoryImg03} alt="" />
                 Viennoiserie
               </button>
+              <button
+                  className={`d-flex align-items-center gap-2 ${
+                    category === "ENTREMETS" ? "foodBtnActive" : ""
+                  } `}
+                  onClick={() => setCategory("ENTREMETS")}
+                >
+                  <img src={foodCategoryImg04} alt="" />
+                  Entremets
+                </button>
             </div>
           </Col>
 
