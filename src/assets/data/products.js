@@ -1,4 +1,3 @@
-// all images imported from images directory
 import product_01_image_01 from "../images/product_01.jpg";
 import product_01_image_02 from "../images/product_01.1.jpg";
 import product_01_image_03 from "../images/product_01.2.jpg";

@@ -16,7 +16,7 @@ import featureImg01 from "../assets/images/delivery.gif";
 import featureImg02 from "../assets/images/cake.gif";
 import featureImg03 from "../assets/images/box.gif";
 
-import products from "../assets/fake-data/products.js";
+import products from "../assets/data/products.js";
 
 import foodCategoryImg01 from "../assets/images/cake.png";
 import foodCategoryImg02 from "../assets/images/Tarte.png";
