@@ -36,8 +36,7 @@ const Checkout = () => {
   };
 
   return (
-    <Helmet title="Checkout">
-      <CommonSection title="Checkout" />
+    
       <section>
         <Container>
           <Row>
@@ -117,7 +116,7 @@ const Checkout = () => {
           </Row>
         </Container>
       </section>
-    </Helmet>
+    
   );
 };
 
