@@ -35,7 +35,7 @@ const ProductCard = (props) => {
           <Link to={`/foods/${id}`}>{title}</Link>
         </h5>
         <div className="product__details">
-          <span className="product__price">${price}</span>
+          <span className="product__price">{price}DA</span>
           <button className="favorite-btn" onClick={toggleFavorite}>
             <i className="ri-heart-add-line"></i>
           </button>

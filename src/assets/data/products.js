@@ -46,7 +46,7 @@ const products = [
   {
     id: "01",
     title: "100% pistache",
-    price: 24.0,
+    price: 1200,
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,

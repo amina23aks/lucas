@@ -100,7 +100,7 @@ const FoodDetails = () => {
               <div className="single__product-content">
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
-                  Price: <span>${price}</span>
+                  Price: <span>{price}DA</span>
                 </p>
                 <p className="category mb-5">
                   Category: <span>{category}</span>

@@ -24,7 +24,7 @@ const Favorite = () => {
               <img src={item.image01} alt={item.title} className="favorite__img" />
               <div>
                 <h5>{item.title}</h5>
-                <p>${item.price}</p>
+                <p>{item.price}DA</p>
               </div>
               <button
                 className="remove-btn"
