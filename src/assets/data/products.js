@@ -58,7 +58,7 @@ const products = [
   {
     id: "02",
     title: "Tarte mystère noisette",
-    price: 115.0,
+    price: 150,
     image01: product_02_image_01,
     image02: product_02_image_02,
     image03: product_02_image_03,
@@ -69,7 +69,7 @@ const products = [
   {
     id: "03",
     title: "Tarte mystère chocolat",
-    price: 110.0,
+    price: 150,
     image01: product_02_image_02,
     image02: product_02_image_01,
     image03: product_02_image_03,
@@ -80,7 +80,7 @@ const products = [
   {
     id: "04",
     title: "Tarte mystère pistache",
-    price: 110.0,
+    price: 150,
     image01: product_02_image_03,
     image02: product_02_image_02,
     image03: product_02_image_01,
@@ -91,7 +91,7 @@ const products = [
   {
     id: "05",
     title: "pistache chocolat",
-    price: 24.0,
+    price: 1500,
     image01: product_01_image_02,
     image02: product_01_image_01,
     image03: product_01_image_03,
@@ -102,7 +102,7 @@ const products = [
   {
     id: "06",
     title: "Pistache fleur d'oranger",
-    price: 24.0,
+    price: 1500,
     image01: product_01_image_03,
     image02: product_01_image_02,
     image03: product_01_image_01,
@@ -114,7 +114,7 @@ const products = [
   {
     id: "07",
     title: "Tarte citron meringuée",
-    price: 115.0,
+    price: 150,
     image01: product_02_image_04,
     image02: product_02_image_05,
     image03: product_02_image_06,
@@ -125,7 +125,7 @@ const products = [
   {
     id: "08",
     title: "Tarte noisette",
-    price: 110.0,
+    price: 150,
     image01: product_02_image_05,
     image02: product_02_image_06,
     image03: product_02_image_07,
@@ -135,7 +135,7 @@ const products = [
   {
     id: "09",
     title: "Tarte pistache fleur d'oranger",
-    price: 110.0,
+    price: 150,
     image01: product_02_image_06,
     image02: product_02_image_07,
     image03: product_02_image_08,
@@ -145,7 +145,7 @@ const products = [
   {
     id: "10",
     title: "Sundae fruit rouge",
-    price: 24.0,
+    price: 2000,
     image01: product_01_image_04,
     image02: product_01_image_05,
     image03: product_01_image_06,
@@ -156,7 +156,7 @@ const products = [
   {
     id: "11",
     title: "Pain au raisin",
-    price: 35.0,
+    price: 50,
     image01: product_06_image_01,
     image02: product_06_image_02,
     image03: product_06_image_03,
@@ -167,7 +167,7 @@ const products = [
   {
     id: "12",
     title: "Mini torsade",
-    price: 35.0,
+    price: 50,
     image01: product_06_image_02,
     image02: product_06_image_01,
     image03: product_06_image_03,
@@ -178,7 +178,7 @@ const products = [
   {
     id: "13",
     title: "Oranais",
-    price: 35.0,
+    price: 50,
     image01: product_06_image_03,
     image02: product_06_image_02,
     image03: product_06_image_01,
@@ -189,7 +189,7 @@ const products = [
   {
     id: "14",
     title: "Passion vanille",
-    price: 24.0,
+    price: 2400,
     image01: product_01_image_05,
     image02: product_01_image_06,
     image03: product_01_image_07,
@@ -201,7 +201,7 @@ const products = [
   {
     id: "15",
     title: "Framboise citron",
-    price: 24.0,
+    price: 2400,
     image01: product_01_image_06,
     image02: product_01_image_07,
     image03: product_01_image_08,
@@ -213,7 +213,7 @@ const products = [
   {
     id: "16",
     title: "Fraisier",
-    price: 24.0,
+    price: 2400,
     image01: product_01_image_07,
     image02: product_01_image_08,
     image03: product_01_image_09,
@@ -225,7 +225,7 @@ const products = [
   {
     id: "17",
     title: "Trianon",
-    price: 24.0,
+    price: 2400,
     image01: product_01_image_08,
     image02: product_01_image_09,
     image03: product_01_image_10,
@@ -237,7 +237,7 @@ const products = [
   {
     id: "18",
     title: "Tarte pistache",
-    price: 115.0,
+    price: 150,
     image01: product_02_image_09,
     image02: product_02_image_08,
     image03: product_02_image_09,
@@ -248,7 +248,7 @@ const products = [
   {
     id: "19",
     title: "Tarte framboise passion",
-    price: 115.0,
+    price: 150,
     image01: product_02_image_07,
     image02: product_02_image_02,
     image03: product_02_image_01,
@@ -259,7 +259,7 @@ const products = [
   {
     id: "20",
     title: "Meringue cacahouète",
-    price: 115.0,
+    price: 80,
     image01: product_06_image_04,
     image02: product_06_image_05,
     image03: product_06_image_06,
@@ -270,7 +270,7 @@ const products = [
   {
     id: "21",
     title: "Pain au raisin",
-    price: 115.0,
+    price: 50,
     image01: product_06_image_05,
     image02: product_06_image_04,
     image03: product_06_image_06,
@@ -281,7 +281,7 @@ const products = [
   {
     id: "22",
     title: "New York roll pistache",
-    price: 115.0,
+    price: 100,
     image01: product_06_image_06,
     image02: product_06_image_05,
     image03: product_06_image_04,
@@ -292,7 +292,7 @@ const products = [
   {
     id: "23",
     title: "Tarte framboise chocolat",
-    price: 110.0,
+    price: 150,
     image01: product_02_image_08,
     image02: product_02_image_09,
     image03: product_02_image_07,
@@ -303,7 +303,7 @@ const products = [
   {
     id: "24",
     title: "3 chocolat",
-    price: 110.0,
+    price: 1800,
     image01: product_01_image_09,
     image02: product_01_image_10,
     image03: product_01_image_08,
@@ -315,7 +315,7 @@ const products = [
   {
     id: "25",
     title: "Choco love",
-    price: 110.0,
+    price: 180,
     image01: product_07_image_01,
     image02: product_07_image_02,
     image03: product_07_image_03,
@@ -326,7 +326,7 @@ const products = [
   {
     id: "26",
     title: "Sundae fruit rouge",
-    price: 110.0,
+    price: 180,
     image01: product_07_image_02,
     image02: product_07_image_03,
     image03: product_07_image_04,
@@ -337,7 +337,7 @@ const products = [
   {
     id: "27",
     title: "Gros macaron framboise",
-    price: 110.0,
+    price: 150,
     image01: product_07_image_03,
     image02: product_07_image_04,
     image03: product_07_image_05,
@@ -348,7 +348,7 @@ const products = [
   {
     id: "28",
     title: "Gros macaron pistache",
-    price: 110.0,
+    price: 150,
     image01: product_07_image_04,
     image02: product_07_image_05,
     image03: product_07_image_06,
@@ -359,7 +359,7 @@ const products = [
   {
     id: "29",
     title: "Paris Sicile",
-    price: 110.0,
+    price: 200,
     image01: product_07_image_05,
     image02: product_07_image_06,
     image03: product_07_image_07,
@@ -370,7 +370,7 @@ const products = [
   {
     id: "30",
     title: "Amour 100% pistache",
-    price: 110.0,
+    price: 180,
     image01: product_07_image_06,
     image02: product_07_image_07,
     image03: product_07_image_08,
@@ -382,7 +382,7 @@ const products = [
   {
     id: "31",
     title: "Cheesecake pistache",
-    price: 110.0,
+    price: 220,
     image01: product_07_image_07,
     image02: product_07_image_08,
     image03: product_07_image_09,
@@ -393,7 +393,7 @@ const products = [
   {
     id: "32",
     title: "Cheesecake vanille caramel",
-    price: 110.0,
+    price: 200,
     image01: product_07_image_08,
     image02: product_07_image_09,
     image03: product_07_image_10,
@@ -404,7 +404,7 @@ const products = [
   {
     id: "33",
     title: "3 chocolat",
-    price: 110.0,
+    price: 150,
     image01: product_07_image_09,
     image02: product_07_image_08,
     image03: product_07_image_10,
@@ -415,7 +415,7 @@ const products = [
   {
     id: "34",
     title: "Fraisier pistache",
-    price: 110.0,
+    price: 200,
     image01: product_07_image_10,
     image02: product_07_image_09,
     image03: product_07_image_08,
@@ -426,7 +426,7 @@ const products = [
   {
     id: "35",
     title: "Trianon",
-    price: 110.0,
+    price: 1200,
     image01: product_01_image_10,
     image02: product_01_image_09,
     image03: product_01_image_08,
@@ -437,7 +437,7 @@ const products = [
   {
     id: "36",
     title: "Pistache fleur d'oranger",
-    price: 110.0,
+    price: 1500,
     image01: product_01_image_11,
     image02: product_01_image_10,
     image03: product_01_image_12,
@@ -449,7 +449,7 @@ const products = [
   {
     id: "37",
     title: "Tarte citron",
-    price: 110.0,
+    price: 1500,
     image01: product_01_image_12,
     image02: product_01_image_11,
     image03: product_01_image_09,
@@ -462,7 +462,7 @@ const products = [
   {
     id: "38",
     title: "Fraisier",
-    price: 110.0,
+    price: 1800,
     image01: product_01_image_13,
     image02: product_01_image_05,
     image03: product_01_image_06,
@@ -474,7 +474,7 @@ const products = [
   {
     id: "39",
     title: "croissant",
-    price: 115.0,
+    price: 50,
     image01: product_06_image_07,
     image02: product_06_image_08,
     image03: product_06_image_06,
@@ -485,7 +485,7 @@ const products = [
   {
     id: "40",
     title: "mini pain au chocolat",
-    price: 115.0,
+    price: 50,
     image01: product_06_image_08,
     image02: product_06_image_07,
     image03: product_06_image_06,
