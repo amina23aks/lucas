@@ -47,11 +47,11 @@ const AboutSection = ({ isHomePage }) => {
                   </div>
                   <div data-aos="fade-up" data-aos-delay="300" className="flex items-center gap-3">
                     <IoFastFood className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-100" />
-                    <span>Créations Fraîches</span>
+                    <span>Pâtisseries à emporter</span>
                   </div>
                   <div data-aos="fade-up" data-aos-delay="500" className="flex items-center gap-3">
                     <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
-                    <span>Pâtisseries à emporter</span>
+                    <span>Créations Fraîches</span>
                   </div>
                 </div>
                 <div data-aos="slide-left" className="border-l-4 border-primary/50 pl-6 space-y-2">
@@ -64,11 +64,9 @@ const AboutSection = ({ isHomePage }) => {
                   {/* Button at the bottom-right of the paragraph */}
                   {isHomePage && (
                     <div className="flex justify-center mt-4">
-                      <Link to="/about">
                         <button className="plus">
-                          En savoir plus
+                        <Link to="/about">  En savoir plus</Link>
                         </button>
-                      </Link>
                     </div>
                   )}
                 </div>
