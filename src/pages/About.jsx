@@ -8,13 +8,13 @@ const About = () => {
   return (
     <>
       <div>
-      <AboutSection /> {/* Use the AboutSection component here */}
+      <AboutSection /> 
     </div>
 
-      {/* New Section: Welcome Section */}
+      
       <div className="container py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12 section-spacing">
-          {/* Image on the left */}
+
           <div data-aos="fade-right" className="flex justify-center">
             <img
               src={WelcomeImg}
