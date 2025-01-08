@@ -36,7 +36,7 @@ import { favoritesActions } from "../store/favoritesSlice"; // Import actions fo
 
 const featureData = [
   {
-    title: "Livraison Rapide",
+    title: "Livraison ",
     imgUrl: featureImg01,
     desc: "Des pâtisseries fraîches et délicieuses livrées rapidement à votre porte, pour satisfaire vos envies sucrées.",
   },
