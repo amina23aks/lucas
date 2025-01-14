@@ -84,14 +84,7 @@ const Checkout = () => {
                     onChange={(e) => setEnterCity(e.target.value)}
                   />
                 </div>
-                <div className="form__group">
-                  <input
-                    type="number"
-                    placeholder="Postal code"
-                    required
-                    onChange={(e) => setPostalCode(e.target.value)}
-                  />
-                </div>
+                
                 <button type="submit" className="addTOCart__btnC">
                   Payment
                 </button>

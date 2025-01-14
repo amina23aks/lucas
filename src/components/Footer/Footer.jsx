@@ -38,8 +38,8 @@ const Footer = () => {
               <img src={logo} alt="logo" />
               <h5>Lucas castello</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt pariatur accusamus
+              Pâtisserie artisanale alliant tradition et innovation pour des douceurs uniques
+               et raffinées.
               </p>
             </div>
           </Col>

@@ -143,7 +143,7 @@ const Home = () => {
                   <span className="shipping__icon">
                     <i class="ri-car-line"></i>
                   </span> 
-                  Livraison gratuite 
+                  Livraison
                 </p>
 
                 <p className="d-flex align-items-center gap-2">
