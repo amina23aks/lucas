@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Container, Row, Col } from "reactstrap";
-import CommonSection from "../components/UI/common-section/CommonSection";
-import Helmet from "../components/Helmet/Helmet";
 
 import "../styles/checkout.css";
 
@@ -12,7 +10,6 @@ const Checkout = () => {
   const [enterNumber, setEnterNumber] = useState("");
   const [enterCountry, setEnterCountry] = useState("");
   const [enterCity, setEnterCity] = useState("");
-  const [postalCode, setPostalCode] = useState("");
 
   const shippingInfo = [];
   const cartTotalAmount = useSelector((state) => state.cart.totalAmount);
@@ -28,7 +25,6 @@ const Checkout = () => {
       phone: enterNumber,
       country: enterCountry,
       city: enterCity,
-      postalCode: postalCode,
     };
 
     shippingInfo.push(userShippingAddress);
