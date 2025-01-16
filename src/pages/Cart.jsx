@@ -1,6 +1,5 @@
 import React from "react";
 
-import CommonSection from "../components/UI/common-section/CommonSection";
 import "../styles/cart-page.css";
 import { useSelector, useDispatch } from "react-redux";
 import { Container, Row, Col } from "reactstrap";
