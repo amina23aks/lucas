@@ -10,8 +10,7 @@ import { favoritesActions } from "../store/favoritesSlice"; // Import favorites 
 
 import "../styles/product-details.css";
 import ProductCard from "../components/UI/product-card/ProductCard";
-import CommonSection from "../components/UI/common-section/CommonSection";
-import Halmet from "../components/Helmet/Helmet";
+
 const FoodDetails = () => {
   const [tab, setTab] = useState("desc");
   const [enteredName, setEnteredName] = useState("");
