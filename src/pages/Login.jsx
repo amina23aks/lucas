@@ -1,15 +1,24 @@
-import React, { useRef } from "react";
-import { useNavigate } from "react-router-dom";
-import "../styles/Login.css";
+// src/components/Login.jsx
+import React, { useRef } from 'react';
+import { useAuth } from '../components/AuthContext/AuthContext.jsx';
+import '../styles/Login.css';
 
 const Login = () => {
-  const loginNameRef = useRef();
-  const loginPasswordRef = useRef();
-  const navigate = useNavigate();
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const { login } = useAuth();
 
   const submitHandler = (e) => {
     e.preventDefault();
-    navigate("/"); // Navigate to the homepage
+    
+    // Simulate authentication
+    const userData = {
+      email: emailRef.current.value,
+      name: emailRef.current.value.split('@')[0], // Simple example using email as name
+    };
+    
+    login(userData);
+    window.location.href = '/'; // Redirect to home
   };
 
   return (
@@ -23,7 +32,7 @@ const Login = () => {
               type="email"
               id="email"
               required
-              ref={loginNameRef}
+              ref={emailRef}
             />
             <label htmlFor="email">Email</label>
           </div>
@@ -32,14 +41,14 @@ const Login = () => {
               type="password"
               id="password"
               required
-              ref={loginPasswordRef}
+              ref={passwordRef}
             />
             <label htmlFor="password">Password</label>
           </div>
           <button type="submit">Login</button>
         </form>
         <p className="register-link">
-          Don’t have an account?{" "}
+          Don't have an account?{" "}
           <a href="/register" className="link">
             Register
           </a>

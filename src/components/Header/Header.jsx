@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
 
 import "../../styles/header.css";
-
+import UserMenu from "../UI/UserMenu/UserMenu.jsx"
 const nav__links = [
   {
     display: "Home",
@@ -97,11 +97,7 @@ const Header = () => {
               <span className="cart__badge">{totalQuantity}</span>
             </span>
 
-            <span className="user">
-              <Link to="/login">
-                <i class="ri-user-line"></i>
-              </Link>
-            </span>
+            <UserMenu />
 
             <span className="mobile__menu" onClick={toggleMenu}>
               <i class="ri-menu-line"></i>

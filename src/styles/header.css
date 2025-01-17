@@ -6,6 +6,18 @@
   
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 50;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
 
 .logo {
   text-align: left;
