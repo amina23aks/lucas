@@ -58,14 +58,14 @@ const Home = () => {
   const [category, setCategory] = useState("ALL");
   const [allProducts, setAllProducts] = useState(products);
 
-  const [hotTarte, setHotTarte] = useState([]);
+  const [Tarte, setTarte] = useState([]);
 
   const dispatch = useDispatch(); // Initialize dispatch
 
   useEffect(() => {
     const filteredTarte = products.filter((item) => item.category === "Tarte");
     const sliceTarte = filteredTarte.slice(0, 4);
-    setHotTarte(sliceTarte);
+    setTarte(sliceTarte);
   }, []);
 
   useEffect(() => {
@@ -339,7 +339,7 @@ const Home = () => {
         <h2>Tartes</h2>
       </Col>
 
-      {hotTarte.map((item) => (
+      {Tarte.map((item) => (
         <Col lg="3" md="4" sm="6" xs="6" key={item.id}>
           <ProductCard
             item={item}
