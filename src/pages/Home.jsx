@@ -211,75 +211,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section>
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center">
-            <h2>Pâtisseries Populaires</h2>
-            </Col>
-
-            <Col lg="12">
-              <div className="food__category d-flex align-items-center justify-content-center gap-4">
-                <button
-                  className={`all__btn  ${
-                    category === "ALL" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("ALL")}
-                >
-                  All
-                </button>
-                <button
-                  className={`d-flex align-items-center gap-2  ${
-                    category === "Gros-modèles" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("Gros-modèles")}
-                >
-                  <img src={foodCategoryImg01} alt="" />
-                  Gros-modèles
-                </button>
-
-                <button
-                  className={`d-flex align-items-center gap-2  ${
-                    category === "TARTE" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("TARTE")}
-                >
-                  <img src={foodCategoryImg02} alt="" />
-                  Tarte
-                </button>
-
-                <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "VIENNOISERIE" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("VIENNOISERIE")}
-                >
-                  <img src={foodCategoryImg03} alt="" />
-                  Viennoiserie
-                </button>
-                <button
-                  className={`d-flex align-items-center gap-2 ${
-                    category === "ENTREMETS" ? "foodBtnActive" : ""
-                  } `}
-                  onClick={() => setCategory("ENTREMETS")}
-                >
-                  <img src={foodCategoryImg04} alt="" />
-                  Entremets
-                </button>
-              </div>
-            </Col>
-
-            {allProducts.map((item) => (
-              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
-                <ProductCard
-                  item={item}
-                  onFavorite={() => addToFavorites(item)} // Add favorite functionality
-                />
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
+    
 
       <section className="why__choose-us">
         <Container>
