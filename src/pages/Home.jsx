@@ -18,12 +18,6 @@ import featureImg03 from "../assets/images/box.gif";
 
 import products from "../assets/data/products.js";
 
-import foodCategoryImg01 from "../assets/images/cake.png";
-import foodCategoryImg02 from "../assets/images/Tarte.png";
-import foodCategoryImg03 from "../assets/images/Viennoiserie.png";
-import foodCategoryImg04 from "../assets/images/Entremets.png";
-
-
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
 import whyImg from "../assets/images/why.jpg";
@@ -55,9 +49,6 @@ const featureData = [
 ];
 
 const Home = () => {
-  const [category, setCategory] = useState("ALL");
-  const [allProducts, setAllProducts] = useState(products);
-
   const [Tarte, setTarte] = useState([]);
 
   const dispatch = useDispatch(); // Initialize dispatch
@@ -67,44 +58,6 @@ const Home = () => {
     const sliceTarte = filteredTarte.slice(0, 4);
     setTarte(sliceTarte);
   }, []);
-
-  useEffect(() => {
-    if (category === "ALL") {
-      setAllProducts(products);
-    }
-
-    if (category === "Gros-modèles") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Gros-modèles"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-
-    if (category === "TARTE") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Tarte"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-
-    if (category === "VIENNOISERIE") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Viennoiserie"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-
-    if (category === "ENTREMETS") {
-      const filteredProducts = products.filter(
-        (item) => item.category === "Entremets"
-      );
-
-      setAllProducts(filteredProducts);
-    }
-  }, [category]);
 
   const addToFavorites = (item) => {
     dispatch(favoritesActions.addFavorite(item)); // Add to favorites handler
@@ -117,7 +70,7 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content  ">
-              <h5 className="mb-3">Bienvenue chez Luca Castello</h5>
+              <h5 className="mb-3">Bienvenue chez Lucas Castello</h5>
               <h1 className="mb-4 hero__title">
                 Découvrez nos <span>délices artisanaux</span> et pâtisseries <br /> 
                 créés avec amour et livrés <span>frais et à temps</span>
