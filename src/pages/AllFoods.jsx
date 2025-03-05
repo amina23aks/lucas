@@ -38,6 +38,8 @@ const AllFoods = () => {
     visitedPage + productPerPage
   );
 
+  const productPerPage = 12;
+  const displayPage = filteredProducts.slice(pageNumber * productPerPage, (pageNumber + 1) * productPerPage);
   const pageCount = Math.ceil(filteredProducts.length / productPerPage);
 
   const changePage = ({ selected }) => {
