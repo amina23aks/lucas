@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Container, Row, Col } from "reactstrap";
 
-import products from "../assets/data/products";
+import products from "../assets/data/products.json";
 import ProductCard from "../components/UI/product-card/ProductCard";
 import ReactPaginate from "react-paginate";
 
@@ -38,8 +38,6 @@ const AllFoods = () => {
     visitedPage + productPerPage
   );
 
-  const productPerPage = 12;
-  const displayPage = filteredProducts.slice(pageNumber * productPerPage, (pageNumber + 1) * productPerPage);
   const pageCount = Math.ceil(filteredProducts.length / productPerPage);
 
   const changePage = ({ selected }) => {

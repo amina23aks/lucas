@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import products from "../assets/data/products";
+import products from "../assets/data/products.json";
+
 import { useParams } from "react-router-dom";
 
 import { Container, Row, Col } from "reactstrap";

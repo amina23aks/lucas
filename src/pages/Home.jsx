@@ -16,10 +16,8 @@ import featureImg01 from "../assets/images/delivery.gif";
 import featureImg02 from "../assets/images/cake.gif";
 import featureImg03 from "../assets/images/box.gif";
 
-import products from "../assets/data/products.js";
-
+import products from "../assets/data/products.json";
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
-
 import whyImg from "../assets/images/why.jpg";
 
 import networkImg from "../assets/images/network.jpeg";
